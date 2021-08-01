@@ -1,0 +1,12 @@
+version: "2"
+services:
+  app:
+    build: ./app
+    container_name: "Flask_App4"
+    ports:
+      - "5000:5000"
+  app2:
+    build: ./flask-jinja-tutorial/flask_jinja_tutorial
+    container_name: "Flask_App6"
+    ports:
+      - "5001:5001"
