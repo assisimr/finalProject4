@@ -5,3 +5,13 @@ services:
     container_name: "Flask_App4"
     ports:
       - "5000:5000"
+  app2:
+    build: ./flask-jinja-tutorial/flask-jinja-tutorial
+    container_name: "Flask_App6"
+    ports:
+      - "5001:5001"
+  app3:
+    build: ./flask-wtforms-tutorial/flask_wtforms_tutorial
+    container_name: "Flask_App_8"
+    ports:
+      - "5002:5002"
