@@ -1,0 +1,4 @@
+Flask
+Flask-SQLAlchemy
+flask-redis
+flask-assets
