@@ -27,6 +27,6 @@ services:
       - "5004:5004"
   app6:
     build: ./app
-    container_name: "Flask_App_14"
+    container_name: "Flask_App_13"
     ports:
       - "5005:5005"
