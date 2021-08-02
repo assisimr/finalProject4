@@ -45,7 +45,8 @@ def get_hello():
 def hello():
     if request.method != 'GET':
         return make_response('Malformed request', 400)
-    my_dict = {'key': 'dictionary value'}
+    my_dict = {'welcome': 'first flask app'
+                          'This page is created by Simran Assi'}
     headers = {"Content-Type": "application/json"}
     return make_response(jsonify(my_dict), 200, headers)
 
