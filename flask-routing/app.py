@@ -39,8 +39,13 @@ def index():
     """Serve homepage template."""
     return render_template(
         "index.html",
-        title='Flask Tutorial: Part 4',
-        body='This is from a template in Part 4 of the Flask Tutorial'
+        title='Flask Tutorial: Part 4- Flask Routing',
+        body='At first glance, it is hard to imagine routing to be an "art." We will typically reserve a URL path, '
+             'such as / or /home, associate this with a page template, and serve said template to the user, '
+             'perhaps with added business logic. That perspective works fine for small-scale applications, '
+             'but meaningful applications (or APIs) are not static one-to-one mappings. Apps are a medium for data '
+             'such as user-generated content such as user profiles or author posts, and routes define the way our '
+             'users will access data which is always changing. '
     )
 
 
