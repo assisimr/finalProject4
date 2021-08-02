@@ -13,7 +13,7 @@ class ContactForm(FlaskForm):
     email = StringField(
         'Email',
         [
-            Email(message=('Not a valid email address.')),
+            Email(message=('Not valid.')),
             DataRequired()
         ]
     )
@@ -21,7 +21,7 @@ class ContactForm(FlaskForm):
         'Message',
         [
             DataRequired(),
-            Length(min=4, message=('Your message is too short.'))
+            Length(min=4, message='Too short.')
         ]
     )
     # recaptcha = RecaptchaField()
@@ -33,14 +33,14 @@ class SignupForm(FlaskForm):
     email = StringField(
         "Email",
         [
-            Email(message='Not a valid email address.'),
+            Email(message='Not valid .'),
             DataRequired()
         ]
     )
     password = PasswordField(
         "Password",
         [
-            DataRequired(message="Please enter a password.")
+            DataRequired(message="enter password.")
         ]
     )
     confirmPassword = PasswordField(
@@ -53,12 +53,8 @@ class SignupForm(FlaskForm):
         "Title",
         [DataRequired()],
         choices=[
-            ("Farmer", "farmer"),
-            ("Corrupt Politician", "politician"),
-            ("No-nonsense City Cop", "cop"),
-            ("Professional Rocket League Player", "rocket"),
-            ("Lonely Guy At A Diner", "lonely"),
-            ("Pokemon Trainer", "pokemon"),
+            ("Aero", "aero"),
+
         ]
     )
     website = StringField("Website", validators=[URL()])
